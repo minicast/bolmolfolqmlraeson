@@ -2,7 +2,7 @@
   "name": "Raeson",
   "description": "Raeson",
   "repository": "",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"],
+  "logo": "./public/img/raeson.ico",
+  "keywords": [],
   "image": "heroku/nodejs"
 }
