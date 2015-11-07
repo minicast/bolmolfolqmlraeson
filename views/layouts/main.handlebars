@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>RAESON</title>
+    {{!-- Bootstrap mobile viewport NOT zoomable by the user --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {{!-- Stylesheets --}}
+    <link rel="stylesheet" type="text/css" href="css/myapp.css">
+    {{!-- -- Bootstrap ---- Latest compiled and minified CSS --}}
+    {{!-- <link rel="stylesheets" href="css/bootstrap.min.css"> --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    {{!-- -- Bootstrap ---- Optional theme --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    {{!-- Icon --}}
+    <link rel="icon" type="image/x-icon" href="img/raeson.ico">
+    <style type="text/css">
+      .link {
+        fill: none;
+        stroke: PowderBlue; /*#5bc0de #D2E4D2 #ccc*/
+        stroke-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand rotate-letters" href="#">
+              <span class="norotate">R</span><span class="rotate">E</span><span class="rotate">A</span><span class="norotate">SON</span>
+            </a
+>            {{!-- <div class="rotate-letters"> --}}
+            {{!-- </div> --}}
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Formulae Libraries <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#library/prop"> Propositinal Logic</a></li>
+                  <li><a href="#library/modal"> Modal Logic</a></li>
+                  <li><a href="#library/fol"> Predicate Logic</a></li>
+                  <li><a href="#library/qml"> QML</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#sandbox/formula"> Sandbox Library</a></li>
+                  <li><a href="#editor/formula/0">Formula Editor</a></li>
+                  {{!-- <li class="divider"></li> --}}
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Structures Corpora <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                <li><a href="#corpus/prop"> Propositional</a></li>
+                  <li><a href="#corpus/modal"> Modal Corpus</a></li>
+                  <li><a href="#corpus/fol"> FOL Corpus</a></li>
+                  <li><a href="#corpus/qml"> QML  Corpus</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#sandbox/structure"> Sandbox Corpus</a></li>
+                  <li><a href="#editor/structure/0">Structure Editor</a></li>
+                  {{!-- <li class="divider"></li> --}}
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Games Repositories <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="https://plaey.herokuapp.com/"> Plaey Propositional</a></li>
+                  <li><a href="https://strategize.herokuapp.com/"> Strategize Modal</a></li>
+                  <li class="disabled"><a href="#"> Semantic Games</a></li>
+                  <li class="disabled">
+                    <a href="#">
+                      Dialogic Games
+                    </a>
+                  </li>
+{{!-- repository/dialogic repository/semantic repository/checking repository/interrogative repository/random --}}
+                  <!-- <li class="disabled"><a href="#"> Model Checking</a></li> -->
+                  <li class="disabled"><a href="#"> Interrogative Games</a></li>
+                  <li class="divider"></li>
+                  <li class="disabled"><a href="#"> Random Game</a></li>
+                  {{!-- <a href="#contacts">Contact List</a>  <a href="#add">New Contact</a> --}}
+                  {{!-- <li class="divider"></li> --}}
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" {{!-- title="coded with the heart by minicast" --}}>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li {{!-- title="built with love by minicast" --}}>
+                      &nbsp;&nbsp;<span class="glyphicon glyphicon-console text-muted" aria-hidden="true" title="coded"> </span>
+                      <span class="text-muted"> <small>with</small> </span>
+                      <small> <span class="glyphicon glyphicon-heart-empty text-muted" aria-hidden="true" title="the heart"></span> </small>
+                      <span class="text-muted"> <small>by</small> </span>
+                      <span class="text-muted">
+                        <strong><a href="mailto:minicast@gmx.com?subject=Raeson App" title="mailto:minicast@gmx.com">minicast</a></strong></br>
+                         <small title="standing on shoulders of giants" > &nbsp;&nbsp;  on shoulders of</small>
+                        <a href='' data-toggle="modal" data-target="#myModal">
+                          <strong title="technology stack">giants</strong>
+                        </a>
+                      </span>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    &nbsp;<span class="text-muted">
+                      <a href="img/raeson-short-ttl15.pdf" title="raeson-short-ttl15.pdf">paper</a><small>&nbsp;&&nbsp;</small><a href="http://slides-raeson.rhcloud.com/#/" title="http://slides-raeson.rhcloud.com/#/">slides</a><small>&nbsp;@&nbsp;</small><strong><a href="http://ttl2015.irisa.fr/" title="http://ttl2015.irisa.fr/">ttl'15</a></strong>
+                      </span>
+                    </span>
+                  </li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
+              {{!-- ⊠ ❤ \(\lor\)  1F381 1F4E6 1F3DB 1F4D6 1F4BD💽🎮 --}}
+            </ul>
+          </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div id="content">
+      {{{body}}}
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Technology Stack</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/tech-stack.png" class="img-responsive" alt="Responsive image">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/myapp.js"></script>
+
+    {{!-- make the height of the main three panels the height of the window on resize --}}
+    <script type="text/javascript">
+      // $( window ).resize(function() {
+      //     var window_height = $(window).height(),
+      //        content_height = window_height - 132;
+      //     $('.vertical-window-height').height(content_height);
+      // });
+    </script>
+
+    {{!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.1/jquery.mobile.js"></script> TODO: add jquery mobile and bind longtap to graph nodes:
+
+    $("svg").bind( "taphold", tapholdHandler );
+
+    function tapholdHandler( event ){
+        $( event.target ).addClass( "taphold" );
+        alert(event.target.getElementsByTagName('title')[0].innerHTML);
+        console.log(event.target.getElementsByTagName('title')[0].innerHTML);
+    }
+     --}}
+
+    {{!-- Mathjax --}}
+    <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+    {{!-- <script type="text/javascript">window.MathJax.Hub.Queue(["Typeset",MathJax.Hub]);</script> --}}
+    {{!-- TODO: autoscrool for mobile view: http://jsfiddle.net/cchana/MjPBk/ --}}
+
+    {{!--
+    <script src="js/MPL.js"></script>
+    --}}
+
+  </body>
+</html>
